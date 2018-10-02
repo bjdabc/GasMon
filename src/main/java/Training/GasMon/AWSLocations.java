@@ -17,10 +17,10 @@ import com.amazonaws.services.s3.model.S3ObjectInputStream;
 public class AWSLocations {
 	
 	static String bucket_name = "eventprocessing-rfm-sept-2018-locationss3bucket-186b0uzd6cf01";
-	static String key_name = "AKIAIT7GQTMHV6B3D72A";
+	static String key_name = ;
 
 	public void getLocations(){
-		BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIAIT7GQTMHV6B3D72A", "Zsnt51Pwjokfl71QHxyedUu67gOs7gEyMs9wHX2A");
+		BasicAWSCredentials awsCreds = new BasicAWSCredentials();
     	AmazonS3 s3Client = AmazonS3ClientBuilder.standard().withRegion(Regions.EU_WEST_1)
     	                        .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
     	                        .build();
